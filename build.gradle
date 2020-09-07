@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.0.8.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+}
+
+group 'com.swisscom'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework:spring-tx"
+    compile "org.springframework.retry:spring-retry"
+    compile "org.projectlombok:lombok"
+
+    annotationProcessor "org.projectlombok:lombok"
+}
