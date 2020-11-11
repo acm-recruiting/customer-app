@@ -33,6 +33,8 @@ public class CustomerService {
 
             PostalService ps = new PostalService();
             ps.sendLetter(c.getMailingAddress(), "Your customer account has been successfully removed");
+
+            customerDbAccess.delete(c);
         }
     }
 

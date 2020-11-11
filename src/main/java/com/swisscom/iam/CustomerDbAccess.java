@@ -29,4 +29,16 @@ public class CustomerDbAccess {
             e.printStackTrace();
         }
     }
+
+    // ####################
+    // out of review scope
+    // ####################
+    public void delete(Customer customer) {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
